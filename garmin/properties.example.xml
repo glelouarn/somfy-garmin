@@ -1,0 +1,11 @@
+<!--
+  Modèle des réglages de l'app montre.
+  Copier ce fichier vers resources/settings/properties.xml puis renseigner :
+    - serverUrl : adresse du Worker Cloudflare
+    - apiKey    : la clé API_KEY définie dans le Worker
+  resources/settings/properties.xml est ignoré par git (il contient la clé).
+-->
+<properties>
+    <property id="serverUrl" type="string">https://somfy-alarme.TON-SOUS-DOMAINE.workers.dev</property>
+    <property id="apiKey" type="string">TA_CLE</property>
+</properties>

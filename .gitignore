@@ -1,0 +1,22 @@
+# --- Secrets : ne jamais publier ---
+# Réglages de l'app montre (adresse du Worker + clé API) : copier properties.example.xml
+garmin/resources/settings/properties.xml
+# Clé de signature Connect IQ
+*.der
+*.pem
+# Variables locales Cloudflare (wrangler)
+.dev.vars
+.env
+# Jeton Somfy du script Python (normalement dans ~/.config, par sécurité)
+token.json
+
+# --- Fichiers générés ---
+garmin/bin/
+*.prg
+*.iq
+__pycache__/
+*.pyc
+
+# --- macOS / éditeurs ---
+.DS_Store
+.vscode/

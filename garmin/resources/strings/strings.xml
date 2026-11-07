@@ -1,0 +1,5 @@
+<strings>
+    <string id="AppName">Alarme Somfy</string>
+    <string id="ServerUrlTitle">Adresse du Worker</string>
+    <string id="ApiKeyTitle">Clé API</string>
+</strings>
