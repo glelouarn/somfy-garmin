@@ -319,6 +319,7 @@ touché.
 ```
 .
 ├── README.md
+├── docs/                        # captures d'écran
 ├── somfy_alarme.py              # script en ligne de commande
 ├── worker/
 │   ├── worker.js                # Cloudflare Worker (fichier unique)
