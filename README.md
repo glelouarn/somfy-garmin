@@ -3,6 +3,13 @@
 Armer, armer partiellement ou désarmer une alarme **Somfy Protect** depuis une montre
 Garmin (fēnix 8, Venu 4, epix 2), avec un aperçu de l'état dans la liste des glances.
 
+| Aperçu (glance) | Écran d'action | Confirmation |
+|:---:|:---:|:---:|
+| <img src="docs/apercu.png" width="260" alt="Aperçu : état actuel sur rond jaune"> | <img src="docs/ecran-action.png" width="260" alt="Écran d'action : trois cadenas"> | <img src="docs/confirmation.png" width="260" alt="Confirmation du désarmement"> |
+| État actuel en un coup d'œil | Choix de l'état : fermé, ouvert, partiel | Désarmement confirmé par ✕ / ✓ |
+
+*Captures du simulateur Connect IQ, fēnix 8 47 mm.*
+
 Le projet contient trois briques indépendantes :
 
 | Dossier | Rôle |
