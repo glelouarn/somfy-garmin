@@ -35,7 +35,9 @@ class SomfyGlanceView extends WatchUi.GlanceView {
         }
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(2 * r + 12, cy, Graphics.FONT_GLANCE, Labels.text(status),
-            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        // Texte centré dans la zone libre à droite du rond.
+        var left = 2 * r + 2;
+        dc.drawText((left + dc.getWidth()) / 2, cy, Graphics.FONT_GLANCE, Labels.text(status),
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 }

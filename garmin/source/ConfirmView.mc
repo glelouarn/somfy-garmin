@@ -66,11 +66,11 @@ class ConfirmView extends WatchUi.View {
 
         for (var i = 0; i < 2; i++) {
             var x = _xs[i];
-            var color = (i == _sel) ? Graphics.COLOR_WHITE : 0x999999;
             if (i == 0) {
-                drawCross(dc, x, _cy, _d, color);
+                drawCross(dc, x, _cy, _d, (i == _sel) ? Graphics.COLOR_WHITE : 0x999999);
             } else {
-                drawCheck(dc, x, _cy, _d, color);
+                // Check toujours vert (plus vif quand sélectionné).
+                drawCheck(dc, x, _cy, _d, (i == _sel) ? 0x3CD070 : 0x2E9E55);
             }
             if (i == _sel) {
                 dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);

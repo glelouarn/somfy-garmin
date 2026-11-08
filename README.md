@@ -54,8 +54,8 @@ Le projet contient trois briques indépendantes :
 
 ### App montre
 
-**Aperçu (glance)** : le cadenas de l'état actuel sur un rond jaune, suivi du nom de l'état
-(*Armée*, *Partielle*, *Désarmée*). C'est le dernier état connu, mis à jour à chaque
+**Aperçu (glance)** : le cadenas de l'état actuel sur un rond jaune, et le nom de l'état centré à
+côté (*Armée*, *Partielle*, *Désarmée*). C'est le dernier état connu, mis à jour à chaque
 ouverture de l'app.
 
 **Écran d'action** : titre `Alarme · <nom du site>`, puis trois cadenas façon Somfy :
@@ -70,7 +70,7 @@ ouverture de l'app.
 - Après une action : *Envoi…* puis *Confirmé* (avec vibration), ou un message d'erreur.
 
 **Confirmation du désarmement** : écran en français, même principe visuel : symboles
-**✕** (annuler, sélectionné par défaut) et **✓** (désarmer).
+**✕** (annuler, sélectionné par défaut) et **✓** en vert (désarmer).
 
 **Commandes**
 
