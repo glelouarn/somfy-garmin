@@ -194,12 +194,12 @@ class MainView extends WatchUi.View {
         }
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(w / 2, h * 69 / 100, Graphics.FONT_SMALL, Labels.text(STATES[_sel]),
+        dc.drawText(w / 2, h * 72 / 100, Graphics.FONT_SMALL, Labels.text(STATES[_sel]),
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
         if (_message.length() > 0) {
             dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(w / 2, h * 80 / 100, Graphics.FONT_XTINY, _message,
+            dc.drawText(w / 2, h * 83 / 100, Graphics.FONT_XTINY, _message,
                 Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
     }

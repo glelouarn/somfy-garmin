@@ -3,6 +3,7 @@ import Toybox.Communications;
 import Toybox.Lang;
 
 // Appels à la passerelle Cloudflare (via l'app Garmin Connect du téléphone).
+(:background)
 module SomfyApi {
 
     // Renvoie null si l'envoi est parti, sinon un message d'erreur de configuration.

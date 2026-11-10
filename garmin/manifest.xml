@@ -18,6 +18,7 @@
         </iq:products>
         <iq:permissions>
             <iq:uses-permission id="Communications"/>
+            <iq:uses-permission id="Background"/>
         </iq:permissions>
         <iq:languages>
             <iq:language>fre</iq:language>

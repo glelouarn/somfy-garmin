@@ -55,8 +55,10 @@ Le projet contient trois briques indépendantes :
 ### App montre
 
 **Aperçu (glance)** : le cadenas de l'état actuel sur un rond jaune, et le nom de l'état centré à
-côté (*Armée*, *Partielle*, *Désarmée*). C'est le dernier état connu, mis à jour à chaque
-ouverture de l'app.
+côté (*Armée*, *Partielle*, *Désarmée*). L'état est relu **toutes les 5 minutes en tâche de
+fond** (minimum imposé par Garmin), même app fermée : l'aperçu reste juste quand l'alarme
+est changée depuis un autre appareil. Il est aussi mis à jour à chaque ouverture de l'app.
+Sans téléphone joignable, le dernier état connu reste affiché.
 
 **Écran d'action** : titre `Alarme · <nom du site>`, puis trois cadenas façon Somfy :
 
@@ -301,7 +303,8 @@ confirmation.
 
 | Fichier | Rôle |
 |---|---|
-| `source/SomfyApp.mc` | point d'entrée, vue complète et aperçu |
+| `source/SomfyApp.mc` | point d'entrée, vue complète, aperçu, programmation de la tâche de fond |
+| `source/SomfyService.mc` | tâche de fond : relit l'état toutes les 5 min pour l'aperçu |
 | `source/SomfyGlanceView.mc` | aperçu (rond jaune + état) |
 | `source/MainView.mc` | écran d'action, appels réseau, mémorisation de l'état |
 | `source/ConfirmView.mc` | écran de confirmation ✕ / ✓ et ses entrées |

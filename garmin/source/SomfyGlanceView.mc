@@ -16,8 +16,9 @@ class SomfyGlanceView extends WatchUi.GlanceView {
         var status = Application.Storage.getValue("status") as String or Null;
         var h = dc.getHeight();
         var r = h * 38 / 100;            // un peu de marge en haut et en bas
-        var cx = r + 1;
         var cy = h / 2;
+        var gap = cy - r;                // même marge à gauche qu'en haut et en bas
+        var cx = gap + r;
 
         if (dc has :setAntiAlias) {
             dc.setAntiAlias(true);
@@ -36,7 +37,7 @@ class SomfyGlanceView extends WatchUi.GlanceView {
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         // Texte centré dans la zone libre à droite du rond.
-        var left = 2 * r + 2;
+        var left = cx + r + gap;
         dc.drawText((left + dc.getWidth()) / 2, cy, Graphics.FONT_GLANCE, Labels.text(status),
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
